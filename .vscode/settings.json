@@ -1,0 +1,8 @@
+{
+  "files.eol": "\n", 
+  "git.enabled": true,
+  "explorer.decorations.enabled": true, 
+  "explorer.decorations.colors": true, 
+  "editor.formatOnSave": true, 
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
