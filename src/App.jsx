@@ -1,4 +1,5 @@
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 
 import './App.css';
 
@@ -13,6 +14,7 @@ function App() {
         <section id='skills'>...</section>
         <section id='contact'>...</section>
       </main>
+      <Footer />
     </div>
   );
 }
