@@ -1,7 +1,3 @@
-.app-container {
-  /* no width needed, naturally fills viewport */
-}
-
 main {
   display: flex;
   flex-direction: column;
