@@ -1,4 +1,5 @@
 import NavBar from './components/NavBar/NavBar';
+import ContactSection from './sections/ContactSection/ContactSection';
 import Footer from './components/Footer/Footer';
 
 import './App.css';
@@ -12,7 +13,9 @@ function App() {
         <section id='about'>...</section>
         <section id='projects'>...</section>
         <section id='skills'>...</section>
-        <section id='contact'>...</section>
+        <section id='contact'>
+          <ContactSection />
+        </section>
       </main>
       <Footer />
     </div>
