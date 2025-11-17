@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 import './ContactSection.css';
 
@@ -41,6 +42,8 @@ const ContactSection = () => {
           <FaLinkedin />
         </a>
       </div>
+
+      <ContactForm />
     </div>
   );
 };
