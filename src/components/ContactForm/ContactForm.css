@@ -13,35 +13,67 @@
   font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea {
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-group input,
+.input-group textarea {
   width: 100%;
-  padding: 0.9rem 1rem;
-  border: 1px solid #ccc;
+  padding: 0.9rem 0.9rem 0.9rem 2.8rem;
+  border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 1rem;
-  resize: none;
+  transition: all 0.25s ease;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+.input-group input:focus,
+.input-group textarea:focus {
   border-color: #0077ff;
-  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.15);
 }
 
-.contact-form button {
-  padding: 0.9rem;
-  font-size: 1.1rem;
-  border: none;
+.input-icon {
+  position: absolute;
+  left: 10px;
+  font-size: 1.3rem;
+  color: #888;
+  transition: 0.25s;
+}
+
+.input-group:focus-within .input-icon {
+  color: #0077ff;
+  transform: scale(1.15);
+}
+
+.send-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   background-color: #0077ff;
   color: white;
+  padding: 0.8rem 1.3rem;
   border-radius: 8px;
+  font-size: 1rem;
+  border: none;
   cursor: pointer;
-  transition: opacity 0.25s ease;
+  transition: background 0.25s, transform 0.25s;
 }
 
-.contact-form button:hover {
-  opacity: 0.85;
+.send-btn:hover {
+  background-color: #005fcc;
+}
+
+.send-btn:active {
+  transform: scale(0.95);
+}
+
+.form-success,
+.form-error {
+  margin-top: 1rem;
+  animation: fadeIn 0.4s ease-out;
 }
 
 .form-success {
@@ -54,4 +86,15 @@
   text-align: center;
   color: red;
   font-weight: 500;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

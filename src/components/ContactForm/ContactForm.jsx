@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { FiUser, FiMail, FiMessageSquare, FiSend } from 'react-icons/fi';
 import './ContactForm.css';
 
 const ContactForm = () => {
@@ -31,18 +32,28 @@ const ContactForm = () => {
     <form className='contact-form' onSubmit={sendEmail}>
       <h3 className='form-title'>Send Me a Message</h3>
 
-      <input type='text' name='from_name' placeholder='Your Name' required />
+      <div className='input-group'>
+        <FiUser className='input-icon' />
+        <input type='text' name='from_name' placeholder='Your Name' required />
+      </div>
 
-      <input type='email' name='from_email' placeholder='Your Email' required />
+      <div className='input-group'>
+        <FiMail className='input-icon' />
+        <input
+          type='email'
+          name='from_email'
+          placeholder='Your Email'
+          required
+        />
+      </div>
 
-      <textarea
-        name='message'
-        rows='5'
-        placeholder='Your Message'
-        required
-      ></textarea>
+      <div className='input-group textarea-group'>
+        <FiMessageSquare className='input-icon' />
+        <textarea name='message' rows='5' placeholder='Your Message' required />
+      </div>
 
-      <button type='submit'>
+      <button type='submit' className='send-btn'>
+        <FiSend />
         {status === 'sending' ? 'Sending...' : 'Send Message'}
       </button>
 
