@@ -1,0 +1,26 @@
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.25s ease;
+  cursor: default;
+}
+
+.skill-card span {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.skill-icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.skill-icon {
+  font-size: 1.3rem;
+}
