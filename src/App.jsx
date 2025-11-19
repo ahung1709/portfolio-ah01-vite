@@ -1,4 +1,5 @@
 import NavBar from './components/NavBar/NavBar';
+import HeroSection from './sections/HeroSection/HeroSection';
 import AboutSection from './sections/AboutSection/AboutSection';
 import SkillsSection from './sections/SkillsSection/SkillsSection';
 import ProjectsSection from './sections/ProjectsSection/ProjectsSection';
@@ -12,16 +13,10 @@ function App() {
     <div className='app-container'>
       <NavBar />
       <main>
-        <section id='hero'>...</section>
-        <section id='about'>
-          <AboutSection />
-        </section>
-        <section id='skills'>
-          <SkillsSection />
-        </section>
-        <section id='projects'>
-          <ProjectsSection />
-        </section>
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+        <SkillsSection />
         <section id='contact'>
           <ContactSection />
         </section>

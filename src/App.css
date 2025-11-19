@@ -10,22 +10,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-#hero {
-  background-color: #f5f5f5;
-}
-
-#about {
-  background-color: #ffffff;
-}
-
-#skills {
-  background-color: #f5f5f5;
-}
-
-#projects {
-  background-color: #ffffff;
+  align-items: center;
 }
 
 #contact {
