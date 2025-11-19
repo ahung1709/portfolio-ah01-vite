@@ -13,7 +13,7 @@ const NavBar = () => {
       {menuOpen && <div className='overlay' onClick={closeMenu}></div>}
 
       <nav className='navbar'>
-        <div className='logo'>MyLogo</div>
+        <div className='logo'>AH</div>
 
         {/* Menu links */}
         <div className={`nav-links ${menuOpen ? 'open' : ''}`}>

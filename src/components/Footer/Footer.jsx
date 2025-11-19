@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className='footer'>
       <div className='footer-container'>
         <div className='footer-section'>
-          <h3 className='footer-title'>MyLogo</h3>
+          <h3 className='footer-title'>AH</h3>
           <p className='footer-text'>
             © {new Date().getFullYear()} Aaron Hung. All rights reserved.
           </p>
