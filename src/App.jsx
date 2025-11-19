@@ -1,4 +1,5 @@
 import NavBar from './components/NavBar/NavBar';
+import AboutSection from './sections/AboutSection/AboutSection';
 import SkillsSection from './sections/SkillsSection/SkillsSection';
 import ProjectsSection from './sections/ProjectsSection/ProjectsSection';
 import ContactSection from './sections/ContactSection/ContactSection';
@@ -12,7 +13,9 @@ function App() {
       <NavBar />
       <main>
         <section id='hero'>...</section>
-        <section id='about'>...</section>
+        <section id='about'>
+          <AboutSection />
+        </section>
         <section id='skills'>
           <SkillsSection />
         </section>
