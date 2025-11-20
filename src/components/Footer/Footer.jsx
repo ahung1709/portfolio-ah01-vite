@@ -1,4 +1,5 @@
 import React from 'react';
+import { personalInfo } from '../../data/personalInfo';
 
 import './Footer.css';
 
@@ -9,7 +10,8 @@ const Footer = () => {
         <div className='footer-section'>
           <h3 className='footer-title'>AH</h3>
           <p className='footer-text'>
-            © {new Date().getFullYear()} Aaron Hung. All rights reserved.
+            © {new Date().getFullYear()} {personalInfo.name}. All rights
+            reserved.
           </p>
         </div>
 
@@ -26,6 +28,9 @@ const Footer = () => {
               <a href='#projects'>Projects</a>
             </li>
             <li>
+              <a href='#skills'>Skills</a>
+            </li>
+            <li>
               <a href='#contact'>Contact</a>
             </li>
           </ul>
@@ -33,8 +38,8 @@ const Footer = () => {
 
         <div className='footer-section'>
           <h4 className='footer-heading'>Contact</h4>
-          <p className='footer-text'>Coquitlam, BC</p>
-          <p className='footer-text'>email@example.com</p>
+          <p className='footer-text'>{personalInfo.city}</p>
+          <p className='footer-text'>{personalInfo.email}</p>
         </div>
       </div>
     </footer>

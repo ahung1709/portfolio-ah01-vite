@@ -1,4 +1,5 @@
 import React from 'react';
+import { personalInfo } from '../../data/personalInfo';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import ContactForm from '../../components/ContactForm/ContactForm';
 
@@ -15,7 +16,7 @@ const ContactSection = () => {
 
       <div className='contact-icons'>
         <a
-          href='mailto:your-email@example.com'
+          href={`mailto:${personalInfo.email}`}
           className='contact-icon'
           aria-label='Email'
         >
@@ -23,7 +24,7 @@ const ContactSection = () => {
         </a>
 
         <a
-          href='https://www.linkedin.com/in/yourlinkedin'
+          href={personalInfo.github}
           target='_blank'
           rel='noopener noreferrer'
           className='contact-icon'
@@ -33,7 +34,7 @@ const ContactSection = () => {
         </a>
 
         <a
-          href='https://www.linkedin.com/in/yourlinkedin'
+          href={personalInfo.linkedin}
           target='_blank'
           rel='noopener noreferrer'
           className='contact-icon'
