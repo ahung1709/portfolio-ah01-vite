@@ -9,7 +9,7 @@
   align-items: center;
 
   overflow: hidden;
-  background: #fdfdfd;
+  background: var(--bg);
 }
 
 /* ---- Subtle animated gradient ---- */
@@ -23,11 +23,10 @@
   pointer-events: none;
   background: radial-gradient(
     circle at 30% 20%,
-    rgba(0, 120, 255, 0.25),
-    rgba(255, 255, 255, 0)
+    color-mix(in srgb, var(--accent) 30%, transparent),
+    transparent
   );
   filter: blur(50px);
-  animation: none;
   z-index: 0;
 }
 
@@ -40,23 +39,23 @@
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: var(--hero-title-size);
   font-weight: 700;
-  color: #222;
-  margin-bottom: 1rem;
+  color: var(--text);
+  margin-bottom: var(--spacing-md);
 }
 
 .hero-subtitle {
-  font-size: 1.6rem;
+  font-size: var(--hero-subtitle-size);
   font-weight: 500;
-  color: #444;
-  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
 }
 
 .hero-text {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 2.5rem;
+  font-size: var(--hero-text-size);
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xl);
   line-height: 1.6;
 }
 
@@ -64,32 +63,42 @@
 .hero-buttons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: var(--spacing-md);
 }
 
 .hero-btn {
-  padding: 0.8rem 1.5rem 0.75rem;
-  border-radius: 8px;
+  padding: var(--spacing-sm) var(--spacing-lg) calc(var(--spacing-sm) - 0.05rem);
+  border-radius: var(--radius-md);
   font-weight: 500;
   text-decoration: none;
   transition: transform 0.2s, box-shadow 0.2s;
 
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .hero-btn.primary {
-  background-color: #0077ff;
+  background-color: var(--accent);
   color: white;
 }
 
+.hero-btn.primary:hover {
+  background-color: var(--accent-hover);
+}
+
 .hero-btn.secondary {
-  border: 2px solid #0077ff;
-  color: #0077ff;
+  border: 2px solid var(--accent);
+  color: var(--accent);
   background: transparent;
+}
+
+.hero-btn.secondary:hover {
+  border-color: var(--accent-hover);
+  color: var(--accent-hover);
 }
 
 .hero-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 119, 255, 0.25);
+  box-shadow: var(--shadow-sm);
 }

@@ -1,0 +1,67 @@
+.theme-switch {
+  width: 58px;
+  height: 28px;
+  border-radius: 20px;
+  padding: 3px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.theme-switch .switch-knob {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  background: var(--text);
+  border-radius: 50%;
+  transition: transform 0.35s ease, background 0.35s ease;
+}
+
+.theme-switch.dark .switch-knob {
+  transform: translateX(28px);
+  background: #facc15; /* warm yellow for dark mode */
+}
+
+/* Icons inside the switch */
+.switch-icon {
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.9rem;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+/* Sun on the left */
+.switch-icon.sun {
+  margin-left: 2px;
+  color: #f59e0b; /* amber */
+}
+
+/* Moon on the right */
+.switch-icon.moon {
+  margin-right: 2px;
+  margin-left: auto;
+  color: #cbd5e1;
+}
+
+/* Make active icon brighter */
+.theme-switch.dark .moon {
+  opacity: 1;
+}
+
+.theme-switch:not(.dark) .sun {
+  opacity: 1;
+}

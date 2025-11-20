@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import ThemeSwitch from '../ThemeSwitch/ThemeSwitch';
 import './NavBar.css';
 
-const NavBar = () => {
+const NavBar = ({ darkMode, toggleDarkMode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -12,8 +13,10 @@ const NavBar = () => {
       {/* Overlay (click to close) */}
       {menuOpen && <div className='overlay' onClick={closeMenu}></div>}
 
-      <nav className='navbar'>
+      <nav className={`navbar ${darkMode ? 'dark' : ''}`}>
         <div className='logo'>AH</div>
+
+        <ThemeSwitch darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
         {/* Menu links */}
         <div className={`nav-links ${menuOpen ? 'open' : ''}`}>

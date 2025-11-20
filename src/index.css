@@ -1,4 +1,27 @@
 :root {
+  /* Global variables */
+  --bg: #ffffff;
+  --text: #222;
+  --text-secondary: #333;
+  --accent: #1d4ed8;
+  --accent-hover: #0077ff;
+  --card-bg: #ffffff;
+  --border: #e5e7eb;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Hero section variables */
+  --radius-md: 8px;
+
+  --spacing-sm: 0.8rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2.5rem;
+
+  --hero-title-size: 3rem;
+  --hero-subtitle-size: 1.6rem;
+  --hero-text-size: 1.1rem;
+
+  /* General */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -13,6 +36,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.dark {
+  --bg: #0f172a;
+  --text: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
+  --card-bg: #1e293b;
+  --border: #334155;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,11 +59,14 @@ html {
 
 body {
   font-family: 'Inter', Avenir, Helvetica, Arial, sans-serif;
-  background-color: #fdfdfd;
-  color: #333;
+
   line-height: 1.6;
   min-width: 320px;
   min-height: 100vh;
+
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 a {
