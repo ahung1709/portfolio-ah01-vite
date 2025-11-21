@@ -80,3 +80,25 @@
 .project-links a:hover {
   color: var(--project-accent);
 }
+
+@media (min-width: 900px) {
+  .project-card {
+    flex-direction: row;
+    height: 300px;
+  }
+
+  .project-image-wrapper {
+    width: 40%;
+    height: 100%;
+  }
+
+  .project-image {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-content {
+    width: 60%;
+    overflow-y: auto;
+  }
+}

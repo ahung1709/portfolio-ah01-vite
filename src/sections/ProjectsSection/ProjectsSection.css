@@ -17,3 +17,9 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
+
+@media (min-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(1, minmax(280px, 1fr));
+  }
+}
