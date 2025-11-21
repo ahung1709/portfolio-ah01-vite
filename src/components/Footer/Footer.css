@@ -1,8 +1,8 @@
 .footer {
-  background-color: #f7f7f7;
+  background-color: var(--card-bg);
   padding: 2.5rem 1.5rem;
   margin-top: 3rem;
-  border-top: 1px solid #e3e3e3;
+  border-top: 1px solid var(--border);
 }
 
 .footer-container {
@@ -21,7 +21,7 @@
 }
 
 .footer-title {
-  color: #aaa;
+  color: var(--text-secondary);
   font-size: 1.1rem;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
@@ -30,14 +30,14 @@
 }
 
 .footer-heading {
-  color: #aaa;
+  color: var(--text-secondary);
   font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 0.7rem;
 }
 
 .footer-text {
-  color: #555;
+  color: var(--text-secondary);
   margin-bottom: 0.4rem;
 }
 
@@ -52,12 +52,12 @@
 
 .footer-section a {
   text-decoration: none;
-  color: #333;
+  color: var(--text);
   transition: color 0.25s ease;
 }
 
 .footer-section a:hover {
-  color: #0077ff;
+  color: var(--accent);
 }
 
 @media (max-width: 760px) {
