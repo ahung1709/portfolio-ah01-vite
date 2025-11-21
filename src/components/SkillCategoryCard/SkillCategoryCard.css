@@ -1,10 +1,12 @@
 .skill-category-card {
   padding: 25px;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--category-card-bg);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--category-card-border);
+  box-shadow: 0 4px 18px var(--category-card-shadow);
+  transition: background 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .category-header {
@@ -17,14 +19,22 @@
 .category-title {
   font-size: 1.4rem;
   font-weight: 600;
+  color: var(--category-text);
 }
 
 .category-icon-wrapper {
   padding: 10px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.12);
+  background: var(--category-icon-bg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .category-icon {
+  margin-top: -2px;
   font-size: 1.6rem;
+  color: var(--category-text);
+  opacity: 0.95;
 }

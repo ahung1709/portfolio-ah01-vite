@@ -21,6 +21,22 @@
   --hero-subtitle-size: 1.6rem;
   --hero-text-size: 1.1rem;
 
+  /* Skill card variables */
+  --skill-card-bg: rgba(0, 0, 0, 0.05);
+  --skill-card-border: rgba(0, 0, 0, 0.15);
+  --skill-card-hover-bg: rgba(0, 0, 0, 0.1);
+  --skill-card-shadow: rgba(0, 0, 0, 0.1);
+  --skill-text: #222;
+  --skill-icon-opacity: 0.8;
+
+  /* Skill category variables */
+  --category-card-bg: rgba(0, 0, 0, 0.04);
+  --category-card-border: rgba(0, 0, 0, 0.12);
+  --category-card-shadow: rgba(0, 0, 0, 0.12);
+
+  --category-icon-bg: rgba(0, 0, 0, 0.08);
+  --category-text: #222;
+
   /* General */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -45,6 +61,22 @@
   --card-bg: #1e293b;
   --border: #334155;
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+  /* Skill card variables */
+  --skill-card-bg: rgba(255, 255, 255, 0.07);
+  --skill-card-border: rgba(255, 255, 255, 0.12);
+  --skill-card-hover-bg: rgba(255, 255, 255, 0.12);
+  --skill-card-shadow: rgba(0, 0, 0, 0.18);
+  --skill-text: #eee;
+  --skill-icon-opacity: 0.9;
+
+  /* Skill category variables */
+  --category-card-bg: rgba(255, 255, 255, 0.08);
+  --category-card-border: rgba(255, 255, 255, 0.12);
+  --category-card-shadow: rgba(0, 0, 0, 0.25);
+
+  --category-icon-bg: rgba(255, 255, 255, 0.12);
+  --category-text: #eee;
 }
 
 * {
