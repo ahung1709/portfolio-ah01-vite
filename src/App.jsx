@@ -36,10 +36,9 @@ function App() {
         <AboutSection />
         <ProjectsSection />
         <SkillsSection />
-        <section id='contact'>
-          <ContactSection />
-        </section>
+        <ContactSection />
       </main>
+
       <Footer />
     </div>
   );

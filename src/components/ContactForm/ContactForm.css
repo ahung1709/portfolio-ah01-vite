@@ -2,9 +2,9 @@
   max-width: 550px;
   margin: 0 auto;
   padding: 2rem;
-  background: #fff;
+  background: var(--card-bg);
   border-radius: 12px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-sm);
   display: flex;
   flex-direction: column;
 }
@@ -14,7 +14,7 @@
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
   font-weight: 600;
-  color: #222;
+  color: var(--text);
 }
 
 .input-group {
@@ -29,18 +29,18 @@
   width: 100%;
   padding: 0.85rem 0.9rem 0.85rem 2.8rem;
   border-radius: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border);
   font-size: 1rem;
   outline: none;
   transition: all 0.25s ease;
   resize: none;
-  background-color: #fafafa;
-  color: #222;
+  background-color: var(--bg);
+  color: var(--text);
 }
 
 .input-group input:focus,
 .input-group textarea:focus {
-  border-color: #0077ff;
+  border-color: var(--accent);
   box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.15);
 }
 
@@ -48,12 +48,12 @@
   position: absolute;
   left: 10px;
   font-size: 1.3rem;
-  color: #888;
+  color: var(--text-secondary);
   transition: 0.25s ease;
 }
 
 .input-group:focus-within .input-icon {
-  color: #0077ff;
+  color: var(--accent);
   transform: scale(1.15);
 }
 
@@ -78,7 +78,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  background-color: #0077ff;
+  background-color: var(--accent);
   color: #fff;
   padding: 0.9rem;
   border-radius: 10px;
@@ -90,7 +90,7 @@
 }
 
 .send-btn:hover {
-  background-color: #005fcc;
+  background-color: var(--accent-hover);
 }
 
 .send-btn:active {

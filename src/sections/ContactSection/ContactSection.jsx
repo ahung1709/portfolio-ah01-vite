@@ -7,45 +7,48 @@ import './ContactSection.css';
 
 const ContactSection = () => {
   return (
-    <div className='contact-wrapper'>
-      <h2 className='contact-title'>Contact</h2>
+    <section id='contact' className='contact-section'>
+      <div className='contact-wrapper'>
+        <h2 className='contact-title'>Contact</h2>
 
-      <p className='contact-text'>
-        Feel free to reach out for opportunities, collaborations, or questions!
-      </p>
+        <p className='contact-text'>
+          Feel free to reach out for opportunities, collaborations, or
+          questions!
+        </p>
 
-      <div className='contact-icons'>
-        <a
-          href={`mailto:${personalInfo.email}`}
-          className='contact-icon'
-          aria-label='Email'
-        >
-          <FaEnvelope />
-        </a>
+        <div className='contact-icons'>
+          <a
+            href={`mailto:${personalInfo.email}`}
+            className='contact-icon'
+            aria-label='Email'
+          >
+            <FaEnvelope />
+          </a>
 
-        <a
-          href={personalInfo.github}
-          target='_blank'
-          rel='noopener noreferrer'
-          className='contact-icon'
-          aria-label='LinkedIn'
-        >
-          <FaGithub />
-        </a>
+          <a
+            href={personalInfo.github}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='contact-icon'
+            aria-label='LinkedIn'
+          >
+            <FaGithub />
+          </a>
 
-        <a
-          href={personalInfo.linkedin}
-          target='_blank'
-          rel='noopener noreferrer'
-          className='contact-icon'
-          aria-label='LinkedIn'
-        >
-          <FaLinkedin />
-        </a>
+          <a
+            href={personalInfo.linkedin}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='contact-icon'
+            aria-label='LinkedIn'
+          >
+            <FaLinkedin />
+          </a>
+        </div>
+
+        <ContactForm />
       </div>
-
-      <ContactForm />
-    </div>
+    </section>
   );
 };
 
