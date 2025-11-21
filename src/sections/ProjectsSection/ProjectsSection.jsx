@@ -6,6 +6,10 @@ import { motion } from 'framer-motion';
 import './ProjectsSection.css';
 
 const ProjectsSection = () => {
+  const visibleProjects = projectsData.filter(
+    (p) => p.showOnProjects !== false
+  );
+
   return (
     <section id='projects' className='projects-section'>
       <motion.h2
@@ -18,7 +22,7 @@ const ProjectsSection = () => {
       </motion.h2>
 
       <div className='projects-grid'>
-        {projectsData.map((project, index) => (
+        {visibleProjects.map((project, index) => (
           <ProjectCard key={index} project={project} index={index} />
         ))}
       </div>

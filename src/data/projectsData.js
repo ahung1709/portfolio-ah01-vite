@@ -25,6 +25,7 @@ export const projectsData = [
     github: 'https://github.com/ahung1709/pro-evolution-wellness',
     demo: 'https://proevolutionwellness.ca/',
     image: projPewImg1,
+    showOnProjects: true,
   },
   {
     title: 'World Attraction App',
@@ -43,6 +44,7 @@ export const projectsData = [
     github: 'https://github.com/ahung1709/project-4-attractions',
     demo: 'https://project-4-attractions.herokuapp.com/',
     image: projWorldAttractionImg1,
+    showOnProjects: true,
   },
   {
     title: 'Restaurant Reviewer App',
@@ -60,6 +62,7 @@ export const projectsData = [
     github: 'https://github.com/ahung1709/project3restaurants',
     demo: 'https://project3restaurants.herokuapp.com/',
     image: projRestaurantsReviewImg1,
+    showOnProjects: true,
   },
   {
     title: 'The Recipes App',
@@ -69,6 +72,7 @@ export const projectsData = [
     github: 'https://github.com/ahung1709/project-2-recipes',
     demo: 'https://project-2-recipes-4ca1ea46338d.herokuapp.com/',
     image: projRecipesImg1,
+    showOnProjects: true,
   },
   {
     title: 'Checkers',
@@ -78,6 +82,7 @@ export const projectsData = [
     github: 'https://github.com/ahung1709/project-1-checkers/tree/main',
     demo: 'https://ahung1709.github.io/project-1-checkers/',
     image: projCheckersImg1,
+    showOnProjects: true,
   },
 
   {
@@ -87,6 +92,7 @@ export const projectsData = [
     tech: ['React', 'Vite', 'CSS'],
     github: 'https://github.com/yourrepo',
     demo: 'https://yourdemo.com',
+    showOnProjects: false,
   },
   {
     title: 'Full Stack MERN App',
@@ -95,6 +101,7 @@ export const projectsData = [
     tech: ['MongoDB', 'Express', 'React', 'Node'],
     github: 'https://github.com/yourrepo',
     demo: 'https://yourdemo.com',
+    showOnProjects: false,
   },
   {
     title: 'REST API Server',
@@ -102,5 +109,6 @@ export const projectsData = [
     tech: ['Node', 'Express'],
     github: 'https://github.com/yourrepo',
     demo: '',
+    showOnProjects: false,
   },
 ];
