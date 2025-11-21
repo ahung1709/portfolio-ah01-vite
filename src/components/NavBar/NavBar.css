@@ -1,13 +1,15 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: var(--navbar-height);
   padding: 0.5rem 2rem;
   position: sticky;
   top: 0;
   background-color: var(--bg);
   z-index: 200;
   box-shadow: var(--shadow-sm);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar.dark {

@@ -10,6 +10,9 @@
   --border: #e5e7eb;
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
 
+  /* Navbar variables */
+  --navbar-height: 4.2rem;
+
   /* Hero section variables */
   --radius-md: 8px;
 
