@@ -1,11 +1,15 @@
 .projects-section {
   padding: 4rem 2rem;
+  background-color: var(--alternate-section-bg);
+  transition: background-color 0.25s ease;
 }
 
 .projects-title {
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 3rem;
+  color: var(--project-text-primary);
+  transition: color 0.25s ease;
 }
 
 .projects-grid {

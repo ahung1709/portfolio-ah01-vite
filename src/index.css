@@ -1,6 +1,7 @@
 :root {
   /* Global variables */
   --bg: #ffffff;
+  --alternate-section-bg: #f9f9f9;
   --text: #222;
   --text-secondary: #333;
   --accent: #1d4ed8;
@@ -20,6 +21,21 @@
   --hero-title-size: 3rem;
   --hero-subtitle-size: 1.6rem;
   --hero-text-size: 1.1rem;
+
+  /* Project card variables */
+  --project-card-bg: rgba(255, 255, 255, 0.85);
+  --project-card-border: 1px solid rgba(0, 0, 0, 0.08);
+  --project-card-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+
+  --project-tag-bg: #e6e7eb;
+  --project-tag-text: #333;
+  --project-tag-border: 1px solid rgba(0, 0, 0, 0.08);
+
+  --project-link-color: #333;
+  --project-accent: #0077ff;
+
+  --project-text-primary: #222;
+  --project-text-secondary: #555;
 
   /* Skill card variables */
   --skill-card-bg: rgba(0, 0, 0, 0.05);
@@ -54,6 +70,7 @@
 
 .dark {
   --bg: #0f172a;
+  --alternate-section-bg: #0e0f11;
   --text: #f1f5f9;
   --text-secondary: #cbd5e1;
   --accent: #60a5fa;
@@ -61,6 +78,21 @@
   --card-bg: #1e293b;
   --border: #334155;
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
+
+  /* Project card variables */
+  --project-card-bg: rgba(20, 20, 20, 0.6);
+  --project-card-border: 1px solid rgba(255, 255, 255, 0.12);
+  --project-card-shadow: 0 5px 20px rgba(255, 255, 255, 0.07);
+
+  --project-tag-bg: rgba(255, 255, 255, 0.12);
+  --project-tag-text: #e5e5e5;
+  --project-tag-border: 1px solid rgba(255, 255, 255, 0.18);
+
+  --project-link-color: #e5e5e5;
+  --project-accent: #4ea3ff;
+
+  --project-text-primary: #f5f5f5;
+  --project-text-secondary: #cccccc;
 
   /* Skill card variables */
   --skill-card-bg: rgba(255, 255, 255, 0.07);
