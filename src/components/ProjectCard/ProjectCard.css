@@ -68,6 +68,7 @@
 /* Links */
 .project-links {
   display: flex;
+  align-items: center;
   gap: 1rem;
   font-size: 1.3rem;
 }
@@ -79,6 +80,19 @@
 
 .project-links a:hover {
   color: var(--project-accent);
+}
+
+.project-link-with-text {
+  display: flex;
+  align-items: center;
+  margin-top: -6px;
+  gap: 0.3rem;
+  color: var(--project-link-color);
+}
+
+.project-link-with-text span {
+  margin-top: 3px;
+  font-size: 1rem;
 }
 
 @media (min-width: 900px) {

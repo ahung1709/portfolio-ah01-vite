@@ -33,11 +33,20 @@ const ProjectCard = ({ project, index }) => {
         </div>
 
         <div className='project-links'>
-          {project.github && (
-            <a href={project.github} target='_blank' rel='noopener noreferrer'>
-              <FiGithub />
-            </a>
-          )}
+          {Array.isArray(project.github) &&
+            project.github.map((repo, i) => (
+              <a
+                key={i}
+                href={repo.url}
+                target='_blank'
+                rel='noopener noreferrer'
+                title={repo.label}
+                className='project-link-with-text'
+              >
+                <FiGithub />
+                <span>{repo.label}</span>
+              </a>
+            ))}
           {project.demo && (
             <a href={project.demo} target='_blank' rel='noopener noreferrer'>
               <FiExternalLink />

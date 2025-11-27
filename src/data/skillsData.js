@@ -6,6 +6,7 @@ import {
   SiHtml5,
   SiCss3,
   SiJavascript,
+  SiTypescript,
   SiReact,
   SiNodedotjs,
   SiExpress,
@@ -14,6 +15,9 @@ import {
   SiGit,
   SiGithub,
   SiDocker,
+  SiHeroku,
+  SiNetlify,
+  SiFirebase,
 } from 'react-icons/si';
 import { FaAws } from 'react-icons/fa';
 
@@ -22,10 +26,11 @@ export const skillsData = [
     title: 'Frontend',
     icon: FaCode,
     skills: [
+      { label: 'React', icon: SiReact },
+      { label: 'TypeScript', icon: SiTypescript },
+      { label: 'JavaScript', icon: SiJavascript },
       { label: 'HTML', icon: SiHtml5 },
       { label: 'CSS', icon: SiCss3 },
-      { label: 'JavaScript', icon: SiJavascript },
-      { label: 'React', icon: SiReact },
     ],
   },
   {
@@ -45,11 +50,16 @@ export const skillsData = [
       { label: 'Git', icon: SiGit },
       { label: 'GitHub', icon: SiGithub },
       { label: 'Docker', icon: SiDocker },
+      { label: 'Heroku', icon: SiHeroku },
+      { label: 'Netlify', icon: SiNetlify },
     ],
   },
   {
     title: 'Cloud',
     icon: FaCloud,
-    skills: [{ label: 'AWS', icon: FaAws }],
+    skills: [
+      { label: 'Firebase', icon: SiFirebase },
+      { label: 'AWS', icon: FaAws },
+    ],
   },
 ];

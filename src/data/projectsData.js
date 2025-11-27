@@ -1,5 +1,6 @@
 // Import images
 import projPewImg1 from '../assets/projects/pew-home01.png';
+import projMonsterRolodexImg1 from '../assets/projects/monster-rolodex01.png';
 import projWorldAttractionImg1 from '../assets/projects/world-attractions01.png';
 import projRestaurantsReviewImg1 from '../assets/projects/restaurants-review01.png';
 import projRecipesImg1 from '../assets/projects/recipes-app01.png';
@@ -17,14 +18,72 @@ export const projectsData = [
       'React',
       'React Router DOM',
       'Node',
-      'JWT',
+      'JSON Web Token (JWT)',
       'Firebase',
       'JavaScript',
       'CSS',
     ],
-    github: 'https://github.com/ahung1709/pro-evolution-wellness',
+    github: [
+      {
+        label: 'Code',
+        url: 'https://github.com/ahung1709/pro-evolution-wellness',
+      },
+    ],
     demo: 'https://proevolutionwellness.ca/',
     image: projPewImg1,
+    showOnProjects: true,
+  },
+  {
+    title: 'Face Recognition Brain',
+    description: 'To be added...',
+    tech: [
+      'React',
+      'JavaScript',
+      'Express',
+      'Node',
+      'Postgres',
+      'Knex.js',
+      'Clarifai',
+      'Create React App',
+      'Npm',
+      'Heroku',
+      'Tachyons',
+    ],
+    github: [
+      {
+        label: 'Frontend',
+        url: 'https://github.com/ahung1709/facerecognitionbrain',
+      },
+      {
+        label: 'Backend',
+        url: 'https://github.com/ahung1709/facerecognitionbrain-api',
+      },
+    ],
+    demo: 'https://smart-brain-01-89e20f787a87.herokuapp.com/',
+    image: 'projFaceRecognitionBrainImg1',
+    showOnProjects: true,
+  },
+  {
+    title: 'Monster Rolodex',
+    description:
+      'A React + TypeScript monster directory that fetches users from JSONPlaceholder and displays them as Robohash-generated monsters. Includes a live search to filter monsters by name.',
+    tech: [
+      'React',
+      'TypeScript',
+      'Vite',
+      'Yarn',
+      'CSS',
+      'Github Pages',
+      'JSONPlaceholder',
+    ],
+    github: [
+      {
+        label: 'Code',
+        url: 'https://github.com/ahung1709/monsters-rolodex-vite/tree/typescript',
+      },
+    ],
+    demo: 'https://ahung1709.github.io/monsters-rolodex-vite/',
+    image: projMonsterRolodexImg1,
     showOnProjects: true,
   },
   {
@@ -41,7 +100,12 @@ export const projectsData = [
       'MongoDB',
       'Token-based authentication',
     ],
-    github: 'https://github.com/ahung1709/project-4-attractions',
+    github: [
+      {
+        label: 'Code',
+        url: 'https://github.com/ahung1709/project-4-attractions',
+      },
+    ],
     demo: 'https://project-4-attractions.herokuapp.com/',
     image: projWorldAttractionImg1,
     showOnProjects: true,
@@ -59,7 +123,12 @@ export const projectsData = [
       'PostgreSQL',
       'Django built-in authentication',
     ],
-    github: 'https://github.com/ahung1709/project3restaurants',
+    github: [
+      {
+        label: 'Code',
+        url: 'https://github.com/ahung1709/project3restaurants',
+      },
+    ],
     demo: 'https://project3restaurants.herokuapp.com/',
     image: projRestaurantsReviewImg1,
     showOnProjects: true,
@@ -69,7 +138,9 @@ export const projectsData = [
     description:
       'The Recipes App is a recipe-focused online social networking service.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Express', 'Node', 'MongoDB', 'OAuth'],
-    github: 'https://github.com/ahung1709/project-2-recipes',
+    github: [
+      { label: 'Code', url: 'https://github.com/ahung1709/project-2-recipes' },
+    ],
     demo: 'https://project-2-recipes-4ca1ea46338d.herokuapp.com/',
     image: projRecipesImg1,
     showOnProjects: true,
@@ -79,7 +150,12 @@ export const projectsData = [
     description:
       'Checkers is a group of strategy board games for two players which involve diagonal moves of uniform game pieces and mandatory captures by jumping over opponent pieces.',
     tech: ['HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/ahung1709/project-1-checkers/tree/main',
+    github: [
+      {
+        label: 'Code',
+        url: 'https://github.com/ahung1709/project-1-checkers/tree/main',
+      },
+    ],
     demo: 'https://ahung1709.github.io/project-1-checkers/',
     image: projCheckersImg1,
     showOnProjects: true,
@@ -90,7 +166,7 @@ export const projectsData = [
     description:
       'A portfolio built with React, Vite, Framer Motion, and EmailJS.',
     tech: ['React', 'Vite', 'CSS'],
-    github: 'https://github.com/yourrepo',
+    github: [{ label: 'Code', url: 'https://github.com/yourrepo' }],
     demo: 'https://yourdemo.com',
     showOnProjects: false,
   },
@@ -99,7 +175,7 @@ export const projectsData = [
     description:
       'A full authentication-based web app with CRUD, JWT, and dashboard.',
     tech: ['MongoDB', 'Express', 'React', 'Node'],
-    github: 'https://github.com/yourrepo',
+    github: [{ label: 'Code', url: 'https://github.com/yourrepo' }],
     demo: 'https://yourdemo.com',
     showOnProjects: false,
   },
@@ -107,7 +183,7 @@ export const projectsData = [
     title: 'REST API Server',
     description: 'Node & Express REST API with Swagger documentation.',
     tech: ['Node', 'Express'],
-    github: 'https://github.com/yourrepo',
+    github: [{ label: 'Code', url: 'https://github.com/yourrepo' }],
     demo: '',
     showOnProjects: false,
   },
