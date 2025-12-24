@@ -1,10 +1,23 @@
 import React from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
-import { FiGithub, FiExternalLink } from 'react-icons/fi';
+import { FiGithub, FiCloud, FiExternalLink } from 'react-icons/fi';
 import './ProjectCard.css';
 
 const ProjectCard = ({ project, index }) => {
+  const TECH_LABELS = {
+    frontend: 'Frontend',
+    backend: 'Backend',
+    tooling: 'Tooling & Dev Experience',
+    cloud: 'Cloud & Infrastructure',
+    services: 'Services & Platforms',
+  };
+
+  const getRepoIcon = (label) => {
+    if (label === 'Serverless') return <FiCloud />;
+    return <FiGithub />;
+  };
+
   return (
     <motion.div
       className='project-card'
@@ -24,11 +37,21 @@ const ProjectCard = ({ project, index }) => {
         <h3>{project.title}</h3>
         <p className='project-description'>{project.description}</p>
 
-        <div className='tech-list'>
-          {project.tech.map((t, i) => (
-            <span key={i} className='tech-item'>
-              {t}
-            </span>
+        <div className='tech-groups'>
+          {Object.entries(project.tech).map(([category, techs]) => (
+            <div key={category} className='tech-group'>
+              <h4 className='tech-group-title'>
+                {TECH_LABELS[category] || category}
+              </h4>
+
+              <div className='tech-list'>
+                {techs.map((tech, i) => (
+                  <span key={i} className='tech-item'>
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
 
@@ -41,14 +64,19 @@ const ProjectCard = ({ project, index }) => {
                 target='_blank'
                 rel='noopener noreferrer'
                 title={repo.label}
-                className='project-link-with-text'
+                className='project-link-item'
               >
-                <FiGithub />
-                <span>{repo.label}</span>
+                {getRepoIcon(repo.label)}
+                {project.github.length > 1 && <span>{repo.label}</span>}
               </a>
             ))}
           {project.demo && (
-            <a href={project.demo} target='_blank' rel='noopener noreferrer'>
+            <a
+              href={project.demo}
+              target='_blank'
+              rel='noopener noreferrer'
+              title='Demo'
+            >
               <FiExternalLink />
             </a>
           )}
