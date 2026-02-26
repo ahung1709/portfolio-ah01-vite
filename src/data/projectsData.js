@@ -1,6 +1,7 @@
 // Import images
 import projPewImg1 from '../assets/projects/pew-home01.png';
 import projMonsterRolodexImg1 from '../assets/projects/monster-rolodex01.png';
+import projPropertyPulseImg1 from '../assets/projects/property-pulse01.png';
 import projFaceRecognitionBrainImg1 from '../assets/projects/face-recognition-brain01.png';
 import projWorldAttractionImg1 from '../assets/projects/world-attractions01.png';
 import projRestaurantsReviewImg1 from '../assets/projects/restaurants-review01.png';
@@ -18,11 +19,11 @@ export const projectsData = [
         'Node',
         'Express',
         'JSON Web Token (JWT)',
-        'MongoDB',
         'Mongoose',
+        'MongoDB',
       ],
-      cloud: ['Firebase'],
-      services: ['MongoDB Atlas', 'EmailJS', 'Heroku'],
+      cloud: ['MongoDB Atlas', 'Firebase', 'Heroku'],
+      services: ['EmailJS'],
     },
     github: [
       {
@@ -35,12 +36,57 @@ export const projectsData = [
     showOnProjects: true,
   },
   {
+    title: 'Property Pulse',
+    description: `A full-stack rental property marketplace built with Next.js that allows users to search, browse, and manage property listings with secure Google OAuth authentication. Users can view detailed property pages with interactive maps, image galleries with lightbox functionality, pricing information, amenities, and social sharing options.
+
+Authenticated users can add, edit, and delete their own listings, bookmark properties, and communicate with property owners through an internal messaging system with unread message tracking. The application uses MongoDB with Mongoose for data modeling, Next.js Server Actions for backend operations, middleware for route protection, and Cloudinary for image storage. Additional integrations include Mapbox for location display, React Toastify for notifications, and Tailwind CSS for responsive design.
+
+Overall, the project demonstrates full-stack application architecture, secure authentication and authorization, database modeling, third-party API integration, and production-ready UI/UX implementation.`,
+    tech: {
+      frontend: [
+        'Next.js 16',
+        'React',
+        'JavaScript',
+        'Tailwind CSS',
+        'React Photoswipe Gallery',
+        'React Map GL',
+        'React Geocode',
+        'React Toastify',
+        'React Share',
+        'React Spinners',
+        'React Icons',
+      ],
+      backend: ['Next.js Server Actions', 'NextAuth.js', 'Mongoose', 'MongoDB'],
+      cloud: ['MongoDB Atlas', 'Google Cloud', 'Vercel'],
+      services: [
+        'Cloudinary',
+        'Mapbox',
+        'Google Maps Platform (Geocoding API)',
+        'Google OAuth',
+      ],
+    },
+    github: [
+      {
+        label: 'Code',
+        url: 'https://github.com/ahung1709/property-pulse-app',
+      },
+    ],
+    demo: 'https://property-pulse-app-three.vercel.app/',
+    image: projPropertyPulseImg1,
+    showOnProjects: true,
+  },
+
+  {
     title: 'Face Recognition Brain',
     description: `A full-stack web application that allows users to register, authenticate, and perform AI-powered face detection on images. The frontend is built with React (Create React App) and implements secure JWT-based session authentication. Authenticated users can submit image URLs for face detection, manage their profiles, and track usage through an entry count system.
 
       The backend is developed with Node.js and Express, featuring JWT authentication, session management with Redis, and persistent user data stored in PostgreSQL. Face detection is powered by the Clarifai API, while an AWS Lambda function (built using the Serverless Framework) dynamically returns rank badges based on user entry count. This Lambda function is invoked directly by the frontend to reduce backend load and demonstrate a scalable serverless architecture.
 
-      The application supports Docker-based local development, environment-based configuration, and health-check endpoints for monitoring. Overall, this project demonstrates full-stack system design, secure authentication, cloud services integration, and production-ready development practices.`,
+      The application supports Docker-based local development, environment-based configuration, and health-check endpoints for monitoring. Overall, this project demonstrates full-stack system design, secure authentication, cloud services integration, and production-ready development practices.
+      
+      Demo account credentials:
+      - Email: demo@example.com
+      - Password: demo123`,
     tech: {
       frontend: ['React', 'JavaScript', 'Reactstrap', 'Bootstrap', 'Tachyons'],
       backend: [
@@ -52,19 +98,16 @@ export const projectsData = [
         'Redis',
       ],
       cloud: [
+        'Neon (PostgreSQL)',
+        'Upstash (Redis)',
         'AWS Lambda',
         'Serverless Framework',
         'Docker',
         'Docker Compose',
         'GitHub Actions',
-      ],
-      services: [
-        'Clarifai API',
-        'Neon (PostgreSQL)',
-        'Upstash (Redis)',
-        'Heroku',
         'Render',
       ],
+      services: ['Clarifai API'],
     },
     github: [
       {
@@ -80,7 +123,8 @@ export const projectsData = [
         url: 'https://github.com/ahung1709/rankly',
       },
     ],
-    demo: 'https://smart-brain-01-89e20f787a87.herokuapp.com/',
+    demo: 'https://facerecognitionbrain-frontend.onrender.com/',
+    // demo: 'https://smart-brain-01-89e20f787a87.herokuapp.com/',
     image: projFaceRecognitionBrainImg1,
     showOnProjects: true,
   },
